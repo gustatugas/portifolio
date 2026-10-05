@@ -7,29 +7,57 @@
 
 /* estilo para o corpo da página */
 body {
+    margin: auto;
+    align-items: center;
+    width: 80%;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #13203D;
+    color: #fff;
     line-height: 1.6;
 }
 
+hr {
+    border: 0;
+    height: 0.5px;
+    background-color: #7C9BFF;
+    margin: 20px 0;
+}
+/* estilo para a barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* estilo para o menu de navegação */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #007bff;
+}
 /* estilo para a seção hero */
 .hero {
     display: flex;
-    background-color: #000;
-    color: #fff;
-    padding: 50px 20px;
+    flex-direction: row;
 }
 
 /* estilo para o conteúdo da seção hero */
 .hero-content {
-    margin: 30px;
+    margin: auto 30px;
 }
 
 /* estilo para a imagem de perfil */
 #image-profile {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin: 30px;
 }
@@ -49,4 +77,19 @@ body {
 
 .social-icons i:hover {
     transform: scale(1.3);
+}
+
+/* estilo para a lista de habilidades */
+.skills {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 10px 4px;
+    font-size: 35px;
+    
 }
