@@ -1,0 +1,52 @@
+/* padronização dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* estilo para a seção hero */
+.hero {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+/* estilo para o conteúdo da seção hero */
+.hero-content {
+    margin: 30px;
+}
+
+/* estilo para a imagem de perfil */
+#image-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+/* estilo para os ícones sociais */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 35px;
+    color: #fff;
+    transition: transform 0.15s ease-in-out;
+}
+
+.social-icons i:hover {
+    transform: scale(1.3);
+}
