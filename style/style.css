@@ -58,9 +58,14 @@ nav ul li a:hover {
     flex-direction: row;
 }
 
+#nome {
+    display: none;
+}
+
 /* estilo para o conteúdo da seção hero */
 .hero-content {
     margin: auto 30px;
+    min-width: 0px;
 }
 
 /* estilo para a imagem de perfil */
@@ -103,6 +108,15 @@ nav ul li a:hover {
 }
 
 /* estilo para a seção de formação */
+.formação {
+    text-align: center;
+}
+
+.universidade {
+    text-align: start;
+    margin-top: 20px;
+}
+
 .sobre, .formação {
     width: 50%;
     padding: 20px;
@@ -111,6 +125,12 @@ nav ul li a:hover {
     border: 1px solid #7C9BFF;
 }
 
+#logo-uninter {
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
 .sobre p {
     margin-bottom: 20px;
 }
@@ -120,6 +140,12 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+/* estilo para a seção de projetos */
+#projetos {
+    padding: 20px;
+    text-align: center;
 }
 
 /* estilo para o rodapé */
@@ -133,4 +159,150 @@ footer {
     margin-top: 20px;
     border-radius: 10px 10px 0px 0px;
     background-color: #18284a;
+}
+
+/* estilo para tablets */
+@media(max-width: 768px) {
+    /* Ajustando informações do hero-content */
+    body {
+        width: 100%;
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    .navbar, #linha-1 {
+        display: none;
+    }
+
+    #nome {
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content {
+        margin: auto 10px;
+        
+    }
+
+    /* Ajustando o tamanho da imagem de perfil */
+    #image-profile {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #image-profile {
+        width: 150px;
+        height: 150px;
+        margin: 20px 0;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    #nome {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h2,
+    .hero-content p {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        list-style: none;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+    .skills-list li {
+        margin: 0;
+        font-size: 35px;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre,
+    .formação {
+        width: 95%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .universidade {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #logo-uninter {
+        max-width: 100%;
+        height: auto;
+    }
+
+    hr {
+        margin: 0;
+    }
 }
