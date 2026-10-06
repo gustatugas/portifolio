@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gustavo Bezerra · Desenvolvedor Back-end</title>
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <section class="navbar">
+    <header class="navbar">
         <div class="logo">
             <h1>Gustavo Bezerra</h1>
         </div>
@@ -19,18 +19,88 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
 
     <hr>
 
     <section class="hero">
         <div class="image-container">
-            <img src="https://i.ibb.co/Mkhw3r9d/Foto.png" alt="Foto" border="0" id="image-profile">
+            <img src="img/Foto.png" alt="Foto" id="image-profile">
         </div>
         <div class="hero-content">
-            <h1>Desenvolvedor Back-end Júnior</h1>
+            <h2>Desenvolvedor Back-end Júnior</h2>
             <p>Gosto de resolver problemas e criar soluções através da programação.</p>
             <!-- icones -->
+            <div class="social-icons">
+                <a href="https://github.com/gustatugas" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" ></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gustavo-bezerra-back-end" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin" "></i>
+                </a>
+                <a href="mailto:gustavo.b.souza002@gmail.com" target="_blank" rel="noopener noreferrer">
+                   <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <div class="skills">
+                <h3>Habilidades:</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-brands fa-html5" alt="HTML5" title="HTML5"></i></li>
+                    <li><i class="fa-brands fa-css3-alt" alt="CSS3" title="CSS3"></i></li>
+                    <li><i class="fa-brands fa-js" alt="JavaScript" title="JavaScript"></i></li>
+                    <li><i class="fa-brands fa-node" alt="Node.js" title="Node.js"></i></li>
+                    <li><i class="fa-brands fa-git-alt" alt="Git" title="Git"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <div class="container">
+        <section class="sobre" id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Olá! Sou estudante de Ciência da Computação e estou construindo minha carreira como desenvolvedor back-end.</p>
+        
+
+            <p>Gosto de entender como as coisas funcionam por dentro e de transformar problemas em soluções com código. Hoje estudo JavaScript e Node.js, e sigo um roadmap que passa por APIs REST, bancos de dados, autenticação e testes. Também uso Git e GitHub para versionar e publicar tudo o que aprendo.</p>
+
+            <p>Aprendo na prática: cada tema estudado vira exercício, e cada exercício vai para o GitHub. Meu objetivo é entrar na área como desenvolvedor, crescer em  projetos relevantes e, no futuro, atuar em empresas de tecnologia, inclusive no mercado internacional.</p>
+
+            <p>Este portfólio reúne a minha evolução, os meus projetos e as tecnologias que venho aprendendo.</p>
+    </section>
+
+        <section class="formação" id="formação">
+            <h2>Formação</h2>
+            <div class="universidade">
+             <h3>Centro Universitário Internacional (UNINTER)</h3>
+             <h3>Curso: Ciência da Computação</h3>
+             <h3>Previsão de Conclusão: 2030</h3>
+
+
+             <p>Atualmente estou cursando Ciência da Computação no Centro Universitário Internacional (UNINTER). Durante o curso, adquiri conhecimentos em algoritmos, estruturas de dados, programação orientada a objetos, bancos de dados e desenvolvimento de software.</p>
+            </div>
+
+            
+        </section>
+
+    </div>
+        
+    <hr>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <!-- adicionar projetos aqui -->
+         <strong>Ainda estou desenvolvendo projetos</strong>
+    </section>
+
+    <hr>
+
+    <footer id="contato">
+        <p>© 2026 Gustavo Bezerra. Todos os direitos reservados.</p>
+
+        <!-- icones -->
             <div class="social-icons">
                 <a href="https://github.com/gustatugas" target="_blank">
                     <i class="fa-brands fa-github" id="icons"></i>
@@ -42,35 +112,8 @@
                    <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
+    </footer>
 
-            <div class="skills">
-                <ul class="skills-list">
-                <p>Habilidades:</p>
-                    <li><i class="fa-brands fa-html5"></i></li>
-                    <li><i class="fa-brands fa-css3-alt"></i></li>
-                    <li><i class="fa-brands fa-js"></i></li>
-                    <li><i class="fa-brands fa-node"></i></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <hr>
-
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-        <p>Olá! Sou estudante de Ciência da Computação e estou construindo minha carreira como desenvolvedor back-end.
-        
-        <br><br>
-
-        Gosto de entender como as coisas funcionam por dentro e de transformar problemas em soluções com código. Hoje estudo JavaScript e Node.js, e sigo um roadmap que passa por APIs REST, bancos de dados, autenticação e testes. Também uso Git e GitHub para versionar e publicar tudo o que aprendo.
-
-        <br><br>
-
-        Aprendo na prática: cada tema estudado vira exercício, e cada exercício vai para o GitHub. Meu objetivo é entrar na área como desenvolvedor, crescer em projetos relevantes e, no futuro, atuar em empresas de tecnologia, inclusive no mercado internacional.
-
-        <br><br>
-
-        Este portfólio reúne a minha evolução, os meus projetos e as tecnologias que venho aprendendo.</p>
+    <script src="script/script.js"></script>
 </body>
 </html>

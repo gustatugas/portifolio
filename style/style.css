@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Deixar a decida suave */
+html {
+    scroll-behavior: smooth;
+}
 /* estilo para o corpo da página */
 body {
     margin: auto;
-    align-items: center;
     width: 80%;
     font-family: Arial, sans-serif;
+    font-size: 18px;
     background-color: #13203D;
     color: #fff;
     line-height: 1.6;
@@ -30,6 +34,11 @@ hr {
 }
 
 /* estilo para o menu de navegação */
+nav {
+    display: flex;
+    align-items: center;
+
+}
 nav ul{
     list-style: none;
     display: flex;
@@ -91,5 +100,37 @@ nav ul li a:hover {
     display: inline-block;
     margin: 10px 4px;
     font-size: 35px;
-    
+}
+
+/* estilo para a seção de formação */
+.sobre, .formação {
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #7C9BFF;
+}
+
+.sobre p {
+    margin-bottom: 20px;
+}
+/* estilo para a seção de container */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* estilo para o rodapé */
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #18284a;
 }
