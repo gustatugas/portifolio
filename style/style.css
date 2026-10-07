@@ -18,6 +18,7 @@ body {
     background-color: #13203D;
     color: #fff;
     line-height: 1.6;
+    text-align: justify;
 }
 
 hr {
@@ -143,10 +144,85 @@ nav ul li a:hover {
 }
 
 /* estilo para a seção de projetos */
-#projetos {
-    padding: 20px;
+
+#title-projetos {
+    width: 95%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin-top: 20px;
+    padding: 40px;
     text-align: center;
 }
+
+.projeto {
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #18284a;
+    border: 1px solid #7C9BFF;
+}
+
+.projeto-img {
+    width: 90%;
+    height: 60%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.descrição-projetos {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* estilo para a lista de repositórios */
+.repositorio {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 45px;
+    list-style: none;
+}
+
+/* estilo para os itens da lista de repositórios */
+.repositorio li {
+    transition: transform 0.15s ease-in-out;
+}
+
+.repositorio li:hover {
+    transform: scale(1.3);
+}
+
+/* estilo para a lista de habilidades do projeto */
+.projeto-skills {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 25px;
+    list-style: none;
+    font-size: 45px;
+}
+
+/* estilo para os itens da lista de habilidades do projeto */
+.projeto-skills li {
+    transition: transform 0.15s ease-in-out;
+}
+
+.projeto-skills li:hover {
+    transform: scale(1.3);
+}
+
 
 /* estilo para o rodapé */
 footer {
@@ -198,6 +274,29 @@ footer {
         width: 200px;
         height: 200px;
     }
+
+    /* ajustando a parte dos projetos */
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        margin: 10px 0;
+        
+    }
+
+    .projeto-img {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -211,7 +310,7 @@ footer {
     }
 
     .hero {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -303,6 +402,17 @@ footer {
     }
 
     hr {
+        width: auto;
         margin: 0;
+    }
+
+    .projetos {
+        width: auto;
+        padding: 5px;
+    }
+
+    footer {
+        width: auto;
+        padding: 10px;
     }
 }
